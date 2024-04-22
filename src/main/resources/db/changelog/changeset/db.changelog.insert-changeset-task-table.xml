@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="insert-into-task" author="admin">
+        <insert tableName="task">
+            <column name="title" value="Добавление комментариев"></column>
+            <column name="description" value="Добавить возможность комментировать задачи"></column>
+            <column name="status_id" value="2"></column>
+            <column name="priority_id" value="1"></column>
+            <column name="author_id" value="1"></column>
+            <column name="assignee_id" value="2"></column>
+        </insert>
+        <insert tableName="task">
+            <column name="title" value="Получать пользователя из контекста"></column>
+            <column name="description" value="Получать пользователя из констекста и настроить задачи по нему"></column>
+            <column name="status_id" value="1"></column>
+            <column name="priority_id" value="1"></column>
+            <column name="author_id" value="2"></column>
+            <column name="assignee_id" value="1"></column>
+        </insert>
+        <insert tableName="task">
+            <column name="title" value="Документация"></column>
+            <column name="description" value="Задокументировать сервис с Swagger"></column>
+            <column name="status_id" value="1"></column>
+            <column name="priority_id" value="2"></column>
+            <column name="author_id" value="3"></column>
+            <column name="assignee_id" value="1"></column>
+        </insert>
+        <insert tableName="task">
+            <column name="title" value="JWT"></column>
+            <column name="description" value="Настроить защиту через токен"></column>
+            <column name="status_id" value="1"></column>
+            <column name="priority_id" value="2"></column>
+            <column name="author_id" value="2"></column>
+            <column name="assignee_id" value="3"></column>
+        </insert>
+        <insert tableName="task">
+            <column name="title" value="Валидация"></column>
+            <column name="description" value="Настроить валидацию ДТО и моеделей из контроллеров"></column>
+            <column name="status_id" value="1"></column>
+            <column name="priority_id" value="2"></column>
+            <column name="author_id" value="3"></column>
+            <column name="assignee_id" value="2"></column>
+        </insert>
+        <insert tableName="task">
+            <column name="title" value="Security"></column>
+            <column name="description" value="Настроить защиту"></column>
+            <column name="status_id" value="1"></column>
+            <column name="priority_id" value="2"></column>
+            <column name="author_id" value="1"></column>
+            <column name="assignee_id" value="3"></column>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

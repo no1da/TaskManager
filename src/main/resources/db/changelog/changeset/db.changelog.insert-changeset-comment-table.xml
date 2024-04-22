@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="insert-into-comment" author="admin">
+        <insert tableName="comment">
+            <column name="description" value="Надо удалять задачу когда она будет выполнена"></column>
+            <column name="author_id" value="3"></column>
+            <column name="task_id" value="1"></column>
+        </insert>
+        <insert tableName="comment">
+            <column name="description" value="Потом JWT добавить"></column>
+            <column name="author_id" value="2"></column>
+            <column name="task_id" value="6"></column>
+        </insert>
+        <insert tableName="comment">
+            <column name="description" value="Это очень удобно)"></column>
+            <column name="author_id" value="3"></column>
+            <column name="task_id" value="2"></column>
+        </insert>
+        <insert tableName="comment">
+            <column name="description" value="Это очень удобно)"></column>
+            <column name="author_id" value="3"></column>
+            <column name="task_id" value="3"></column>
+        </insert>
+        <insert tableName="comment">
+            <column name="description" value="Это очень удобно)"></column>
+            <column name="author_id" value="3"></column>
+            <column name="task_id" value="4"></column>
+        </insert>
+        <insert tableName="comment">
+            <column name="description" value="Это очень удобно)"></column>
+            <column name="author_id" value="3"></column>
+            <column name="task_id" value="5"></column>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
